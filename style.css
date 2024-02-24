@@ -6,13 +6,46 @@
 body{
     overflow: hidden;
     background: black;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
 }
 canvas{
     position: absolute;
     top: 0;
     left: 0;
 }
-
+.title-bg{
+    position: absolute;
+    display: grid;
+    align-items: center;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.title-text{
+    text-align: center;
+    padding: 20px;
+    background: rgba(5, 199, 206, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(9, 224, 196, 0.3);
+    color: aqua;
+}
+.title-text{
+    font-family: 'Product Sans', sans-serif; 
+    background-image: linear-gradient(45deg, #17e9cd, #09e640);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
 
 
 
